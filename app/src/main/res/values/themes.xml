@@ -1,9 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.SplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MyApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.SplashScreen" parent="Base.Theme.SplashScreen" />
+
+    <!--Logo de la app-->
+    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">
+        <!--Logo-->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_turbo_torque</item>
+        <item name="windowSplashScreenIconBackgroundColor">@android:color/transparent</item>
+
+        <!-- Fondo de la splashscreen -->
+        <item name="windowSplashScreenBackground">@color/fondoSplashScreen</item>
+
+        <item name="postSplashScreenTheme">@style/Base.Theme.MyApp</item>
+    </style>
 </resources>
